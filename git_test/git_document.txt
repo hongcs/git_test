@@ -1,0 +1,22 @@
+git --version
+git config --global --list
+
+git config --global user.name '사용자 이름(git_hub 회원가입 이름'
+git config --global user.email '사용자 이메일(git_hub 회원가입 이름'
+git config --global core.autocrlf true    :: 개행문자 정의
+
+
+git init                       :: 버전 관리를 시작 하겠다
+                                  git bransch가 msater 인지 확인
+
+git status                     :: git 상태 확인
+
+                                  No commits yet   - 아직 버전 관리를 시작하지 않았다
+                                  Untracked files: - 현재 추적하고 있지 않은 파일 표시
+
+git add .                      :: 해당 폴더의 전체 버전 관리
+                                  전체 파일과 폴더 추적
+git add index.html             ::  파일 1개만 관리
+
+
+git commit -m 'first upload'   :: 
