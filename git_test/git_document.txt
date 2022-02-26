@@ -183,3 +183,21 @@ $ git remote add git_test https://github.com/hongcs/git_test.git    :: git_test 
 
   USER@LAPTOP-KTDEF5E5 MINGW64 /c/python_fast (master)
 $ git push git_test master
+  info: please complete authentication in your browser...
+  Enumerating objects: 67, done.
+  Counting objects: 100% (67/67), done.
+  Delta compression using up to 8 threads
+  Compressing objects: 100% (53/53), done.
+  Writing objects: 100% (67/67), 8.73 KiB | 558.00 KiB/s, done.
+  Total 67 (delta 19), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (19/19), done.
+  To https://github.com/hongcs/git_test.git
+   * [new branch]      master -> master
+
+  USER@LAPTOP-KTDEF5E5 MINGW64 /c/python_fast (master)
+
+
+$ git checkout add-style
+$ git push git_test add-style
+$ 
+$ git push git_test --all
