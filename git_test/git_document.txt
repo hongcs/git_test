@@ -51,4 +51,12 @@ git branch                       :: branch가 add-style 로 변경되었음을 �
                                       master
 
 < branch add-style 상태애서 main.css 생성 >
-main.css 생성 추가후 index.html 에 css 적용
+* main.css 생성 추가후 index.html 에 css 적용 수정후
+
+git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
+git status
+git commit -m '스타일 추가'
+
+git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
+git status
+git commit -m '스타일 추가1'
