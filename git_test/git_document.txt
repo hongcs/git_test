@@ -170,3 +170,16 @@ $ git resert --hard e748e88fd16c95cd9e7ca0dcb216a871fed8bcbc
 
   The most similar command is
         revert
+
+< git server upload >
+https://github.com/hongcs/git_test.git
+
+$ git status
+  On branch master
+  nothing to commit, working tree clean
+
+  USER@LAPTOP-KTDEF5E5 MINGW64 /c/python_fast (master)
+$ git remote add git_test https://github.com/hongcs/git_test.git    :: git_test _ alise 명
+
+  USER@LAPTOP-KTDEF5E5 MINGW64 /c/python_fast (master)
+$ git push git_test master
