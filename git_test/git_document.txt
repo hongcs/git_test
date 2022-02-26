@@ -96,3 +96,38 @@ $ git commit -m '스타일 추가3'
 
 < branch 병합 >
 $ git checkout master
+  Switched to branch 'master'
+
+$ git checkout abc
+  Switched to branch 'abc'
+
+$ git merge add-style
+  Updating 716b584..8fcbb07
+  Fast-forward
+   git_test/git_document.txt | 97 +++++++++++++++++++++++++++++++++++++++++------
+   git_test/index.html       |  3 +-
+   git_test/main.css         |  3 ++
+   3 files changed, 90 insertions(+), 13 deletions(-)
+   create mode 100644 git_test/main.css
+
+< merge 후 index 수정 >
+$ git add .
+$ git commit -m 'ABC!'
+$ git checkout add-style
+  Switched to branch 'add-style'
+$ git commit -m 'ADD STYLE??'
+  [add-style 6b46373] ADD STYLE??
+   1 file changed, 1 insertion(+), 1 deletion(-)
+$ git checkout abc
+  Switched to branch 'abc'
+
+< branch 충동 발생 >
+$ git merge add-style
+  Auto-merging git_test/index.html
+  CONFLICT (content): Merge conflict in git_test/index.html
+  Automatic merge failed; fix conflicts and then commit the result.  
+
+  * 현재변경사항 수락
+  * 수신변경사항 수락
+  * 두변경사항 모두 두락
+  * 변경사항 비교
