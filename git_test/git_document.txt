@@ -83,3 +83,16 @@ $ git checkout -b abc
 $ git branch                       :: * abc  
 $ git checkout add-style
   Switched to branch 'add-style'
+
+$ git status
+$ git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
+$ git status
+$ git commit -m '스타일 추가2'
+
+$ git status
+$ git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
+$ git status
+$ git commit -m '스타일 추가3'
+
+< branch 병합 >
+$ git checkout master
