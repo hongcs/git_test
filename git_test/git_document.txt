@@ -1,51 +1,51 @@
 < git 환경설정 >
-git --version
-git config --global --list
+$ git --version
+$ git config --global --list
 
-git config --global user.name '사용자 이름(git_hub 회원가입 이름'
-git config --global user.email '사용자 이메일(git_hub 회원가입 이름'
-git config --global core.autocrlf true    :: 개행문자 정의
+$ git config --global user.name '사용자 이름(git_hub 회원가입 이름'
+$ git config --global user.email '사용자 이메일(git_hub 회원가입 이름'
+$ git config --global core.autocrlf true    :: 개행문자 정의
 
 < git verwion 시작 >
-git init                       :: 버전 관리를 시작 하겠다
+$ git init                       :: 버전 관리를 시작 하겠다
                                   git bransch가 msater 인지 확인
 
-git status                     :: git 상태 확인
+$ git status                     :: git 상태 확인
 
                                   No commits yet   - 아직 버전 관리를 시작하지 않았다
                                   Untracked files: - 현재 추적하고 있지 않은 파일 표시
 
-git add .                      :: 해당 폴더의 전체 버전 관리 준비
+$ git add .                      :: 해당 폴더의 전체 버전 관리 준비
                                   전체 파일과 폴더 추적
-git add index.html             ::  파일 1개만 관리
+$ git add index.html             ::  파일 1개만 관리
 
 
-git commit -m '프로젝트 생성'   :: 메세지 추가
+$ git commit -m '프로젝트 생성'   :: 메세지 추가
                                   commit -- 버전을 추적 하겠다
                                   -m      -- 메세지 관리
 
-git log                         :: commit 내역 조회
+$ git log                         :: commit 내역 조회
 
 < 내용 수정후 >
-git status                      :: 파일들이 modify 되었다는것을 확인할수 있음
-git add .                       :: 
-git status                      :: Changes to be committed: 변경사항이 있고 commit헐 준비가 되었다.
+$ git status                      :: 파일들이 modify 되었다는것을 확인할수 있음
+$ git add .                       :: 
+$ git status                      :: Changes to be committed: 변경사항이 있고 commit헐 준비가 되었다.
                                    modify 글자색이 적생에서 초록색으로 변경
-git commit -m '타이틀 태그 수정'
-git log                         :: 현재 버전은 무엇이냐 확인 가능 ( (HEAD -> master) )
+$ git commit -m '타이틀 태그 수정'
+$ git log                         :: 현재 버전은 무엇이냐 확인 가능 ( (HEAD -> master) )
                                    HEAD -> MASTER 현재 버전이 MASTER 이라는 것을 확인
 
 < 브랜치 생성/삭제/이동 >
 * master branch는 보수적으로 관리가 필요
 < brandch 생성 >
-git branch add-style             :: add-style  라는 이름으 branch 생성
-git branch                       :: 관리되고 있는 brans 조회됨.
+$ git branch add-style             :: add-style  라는 이름으 branch 생성
+$ git branch                       :: 관리되고 있는 brans 조회됨.
                                     $ git branch 
                                       add-style
                                     * master
-git checkout add-style           :: branch  add-style 로 변경
+$ git checkout add-style           :: branch  add-style 로 변경
                                     Switched to branch 'add-style'  
-git branch                       :: branch가 add-style 로 변경되었음을 확인함
+$ git branch                       :: branch가 add-style 로 변경되었음을 확인함
                                     $ git branch
                                     * add-style
                                       master
@@ -53,10 +53,33 @@ git branch                       :: branch가 add-style 로 변경되었음을 �
 < branch add-style 상태애서 main.css 생성 >
 * main.css 생성 추가후 index.html 에 css 적용 수정후
 
-git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
-git status
-git commit -m '스타일 추가'
+$ git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
+$ git status
+$ git commit -m '스타일 추가'
 
-git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
-git status
-git commit -m '스타일 추가1'
+$ git add .                        :: 적색의 수정파일과 신규 파일을 초록으로 변경
+$ git status
+$ git commit -m '스타일 추가1'
+
+< branch 생성 삭제 >
+$ git branch                       :: * add-style 상태
+$ git checkout master              :: branch master 로 이동
+  Switched to branch 'master'
+$ git branch remove-this           :: branch remove-this 생성
+$ git checkout remove-this         :: branch remove-this 로 이동
+  Switched to branch 'remove-this'
+$ git branch                       :: * remove-this 상태
+$ git branch -d remove-this        
+  error: Cannot delete branch 'remove-this' checked out at 'C:/python_fast'
+$ git checkout master
+  Switched to branch 'master'
+$ git branch                       :: * master
+$ git branch -d remove-this
+  Deleted branch remove-this (was 716b584).
+
+< branch 생성과 동시에 이동 >  
+$ git checkout -b abc
+  Switched to a new branch 'abc'
+$ git branch                       :: * abc  
+$ git checkout add-style
+  Switched to branch 'add-style'
