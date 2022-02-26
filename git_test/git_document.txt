@@ -153,4 +153,4 @@ $ git log       :: 3번 버전 삭제 , 2번 버번이 최종
 $ git reset --hard ORIG_HEAD
   HEAD is now at dcc5403 3
 
-$ git log       :: 3번 버전 되살려짐, 최신저번으로 살려짐
+$ git log       :: 3번 버전 되살려짐, 최신버전으로 살려짐
