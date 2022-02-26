@@ -145,12 +145,28 @@ $ git commit -m '3번'  :: index.html 파일 내용을 3번으로 수정
 $ git status
 $ git log
 
-$ git reset --hard HEAD~
+$ git reset --hard HEAD~      :: 바로 이전버전으로 살려짐 ( 2번으로 )
   HEAD is now at dd2643e 2
 
-$ git log       :: 3번 버전 삭제 , 2번 버번이 최종
+$ git log       
 
-$ git reset --hard ORIG_HEAD
+$ git reset --hard ORIG_HEAD  :: 삭제 이전 버전으로 살려짐 ( 3번으로 )
   HEAD is now at dcc5403 3
 
 $ git log       :: 3번 버전 되살려짐, 최신버전으로 살려짐
+
+$ git reset --hard HEAD~3            :: 최근 1번째로 되살려짐
+  HEAD is now at e748e88 git_doc 최신2
+
+$ git log
+commit e748e88fd16c95cd9e7ca0dcb216a871fed8bcbc (HEAD -> master)
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 14:19:09 2022 +0900
+
+    git_doc 최신2
+
+$ git resert --hard e748e88fd16c95cd9e7ca0dcb216a871fed8bcbc
+  git: 'resert' is not a git command. See 'git --help'.
+
+  The most similar command is
+        revert

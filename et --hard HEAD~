@@ -1,0 +1,96 @@
+[33mcommit 5061a3f22a7b6c5088d603800768d1d1040edfc3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 14:22:28 2022 +0900
+
+    6
+
+[33mcommit 0c3bd06ba250ecaace54603c798937cc98daf934[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 14:21:55 2022 +0900
+
+    5
+
+[33mcommit 5f0d32a901a1a43f33e65edced36f533affa0c6c[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 14:20:17 2022 +0900
+
+    4
+
+[33mcommit e748e88fd16c95cd9e7ca0dcb216a871fed8bcbc[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 14:19:09 2022 +0900
+
+    git_doc 최신2
+
+[33mcommit 6f1305eb588e42b89403cb2113fe6d6cb857007d[m
+Merge: dcc5403 ba57bf4
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 13:13:17 2022 +0900
+
+    master git_doc 최신
+
+[33mcommit dcc54036b4ab3596e695f10c56f48bb406354fb5[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:54:46 2022 +0900
+
+    3
+
+[33mcommit dd2643e7d987d27762d12da2739eb4fdc4d8eae1[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:53:41 2022 +0900
+
+    2
+
+[33mcommit 0b28e8b3de52c4ef6c1ad9eb4fd08479bc0d31ac[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:52:29 2022 +0900
+
+    1
+
+[33mcommit ba57bf488931c1b8ce75c542e56edb36629bcf0e[m[33m ([m[1;32madd-style[m[33m)[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:49:08 2022 +0900
+
+    스타일 추가4
+
+[33mcommit 6b463730a979f27a279bdb3bd895490d9ad3d444[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:29:35 2022 +0900
+
+    ADD STYLE??
+
+[33mcommit 8fcbb07af2048d41c714c27c21cf47f5e71323ff[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:22:48 2022 +0900
+
+    스타일 추가3
+
+[33mcommit 132a5718bd0e952f96e921c3af0a2f2f3cd4b495[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 12:19:01 2022 +0900
+
+    스타일 추가2
+
+[33mcommit e508af0123ffaf26fcaf1fcec6bf79559ceb6459[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 11:56:27 2022 +0900
+
+    스타일 추가1
+
+[33mcommit 31b8694a9ac9f8c8994ecf269f0e13cd1f66cb6b[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 11:53:54 2022 +0900
+
+    스타일 추가
+
+[33mcommit 716b5841858d3e76a313ecc2fb27905cc2523529[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 11:07:22 2022 +0900
+
+    타이틀 태그 수정
+
+[33mcommit 4084283cbb2aa4efa3fcca05b34b16ff15864245[m
+Author: hongcs <00050004@naver.com>
+Date:   Sat Feb 26 10:58:26 2022 +0900
+
+    프로젝트 생성
