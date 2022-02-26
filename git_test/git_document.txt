@@ -19,4 +19,7 @@ git add .                      :: 해당 폴더의 전체 버전 관리
 git add index.html             ::  파일 1개만 관리
 
 
-git commit -m 'first upload'   :: 
+git commit -m '프로젝트 생성'   :: 메세지 추가
+                                  commit -- 버전을 추적 하겠다
+
+git log                         :: commit 내역 조회
