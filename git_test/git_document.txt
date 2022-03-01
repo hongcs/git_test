@@ -182,6 +182,11 @@ $ git status
 $ git remote add git_test https://github.com/hongcs/git_test.git    :: git_test _ alise 명
 
   USER@LAPTOP-KTDEF5E5 MINGW64 /c/python_fast (master)
+
+$ git remote -v  :: remote 상태 보기
+  git_test        https://github.com/hongcs/git_test.git (fetch)
+  git_test        https://github.com/hongcs/git_test.git (push)
+
 $ git push git_test master
   info: please complete authentication in your browser...
   Enumerating objects: 67, done.
@@ -200,4 +205,40 @@ $ git push git_test master
 $ git checkout add-style
 $ git push git_test add-style
 $ 
-$ git push git_test --all
+$ git push git_test --all    :: 모든 branch 가 올라감
+--------------------------------------------------------------
+< 참고 youtube >
+: https://www.youtube.com/watch?v=lelVripbt2M
+  https://www.youtube.com/watch?v=cwC8t9dno2s
+--------------------------------------------------------------
+< git down 받기 - freshman >
+1. master 신규소스 생성후 github에 소스 upload
+   $ git push origin master
+2. github에서 소스를 down 받는다
+   $ git clone git주소 freshman :: git clone git주소 폴더명
+   cd freshman
+   code .     :: enter
+3. freshman 소스 수정후 github에 push
+   freshman 소스 수정후 freshman branch 생성후 소스 upload
+   $ git checkout -b freshman  :: freshman branch 생성후 branch 이동 
+   $ git push origin freshman  :: branch상태가 freshman
+
+4. freshman은 github에서 'comoare & pull request' 클릭
+   메세지 입력후 'create pull request' 클릭
+5. github에서 pull request 에 숫자 나타남 - master에 병합해 달라는 요청
+6. github에서 내용 확인후 'merge pull request' 클릭
+   merged라고 나타남 ( frshmans 소스와 master소스가 합처짐 )
+
+7. 시니어 사원은 github 소스 받아 와서 본인 소스와 머지한다.
+   동기화 작업
+   시니어 소스 저장   
+   $ git add .
+   $ git commit -m 'merge하기위한 준비'
+
+   $ git pull origin master   :: github master branch에서 소스 받아옴
+                                 동기화 작업 진행됨.
+8. 소스 머지가 확인이 되면 github master에 upload
+   $ git push origin master   :: github master에 upload 
+
+
+
